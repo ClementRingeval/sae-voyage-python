@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3230ea3823879b72827aa8c88fbd4fc8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3230ea3823879b72827aa8c88fbd4fc8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3230ea3823879b72827aa8c88fbd4fc8 = L.map(
+                "map_3230ea3823879b72827aa8c88fbd4fc8",
+                {
+                    center: [45.7578137, 4.8320114],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_267478e64714e8115eb259f8177b23bc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_267478e64714e8115eb259f8177b23bc.addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var marker_48c315ba444cc7e12eb60607c011d848 = L.marker(
+                [45.759028, 4.830388],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_925fab7b7be4c295630bd7512d476311 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c25a825e41321368482d6b70929d1c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_302f79ca6ae4c3cb13813d27268aa1cf = $(`<div id="html_302f79ca6ae4c3cb13813d27268aa1cf" style="width: 100.0%; height: 100.0%;"><b>Hôtel de l'Europe</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 1 r. Colonel-Chambonnet 13 pl. Antonin-Gourju</div>`)[0];
+                popup_0c25a825e41321368482d6b70929d1c2.setContent(html_302f79ca6ae4c3cb13813d27268aa1cf);
+            
+        
+
+        marker_48c315ba444cc7e12eb60607c011d848.bindPopup(popup_0c25a825e41321368482d6b70929d1c2)
+        ;
+
+        
+    
+    
+            marker_48c315ba444cc7e12eb60607c011d848.bindTooltip(
+                `<div>
+                     Hôtel de l'Europe (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48c315ba444cc7e12eb60607c011d848.setIcon(icon_925fab7b7be4c295630bd7512d476311);
+            
+    
+            var marker_3eaa0b31f115b8971d4a255e1690584f = L.marker(
+                [45.7601820139508, 4.83129994405855],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_a8612f5bdb1e81e5fc0d05543b6f5f36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78fc9821e79210c76f3f303fba03d72a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c4ed902de9f18fc01cebfe421cba653 = $(`<div id="html_3c4ed902de9f18fc01cebfe421cba653" style="width: 100.0%; height: 100.0%;"><b>Célestins - Théâtre de Lyon</b><br> <b>Type :</b> Théâtre<br> <b>Prix :</b> 25€<br> <b>Couleur :</b> Orange<br> <b>Adresse :</b> 4 r. Charles Dullin</div>`)[0];
+                popup_78fc9821e79210c76f3f303fba03d72a.setContent(html_3c4ed902de9f18fc01cebfe421cba653);
+            
+        
+
+        marker_3eaa0b31f115b8971d4a255e1690584f.bindPopup(popup_78fc9821e79210c76f3f303fba03d72a)
+        ;
+
+        
+    
+    
+            marker_3eaa0b31f115b8971d4a255e1690584f.bindTooltip(
+                `<div>
+                     Célestins - Théâtre de Lyon (Théâtre)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3eaa0b31f115b8971d4a255e1690584f.setIcon(icon_a8612f5bdb1e81e5fc0d05543b6f5f36);
+            
+    
+            var marker_690460c991a31f1b049f37c49264fc33 = L.marker(
+                [45.7571202756502, 4.83477327787725],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_a6a5040612e96203355e4b77e2ee7620 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab7b2a749cb226e545971b3ccf890e93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5b51c641feba0b55f39541dde64bf08 = $(`<div id="html_c5b51c641feba0b55f39541dde64bf08" style="width: 100.0%; height: 100.0%;"><b>Théâtre des Marronniers</b><br> <b>Type :</b> Théâtre<br> <b>Prix :</b> 25€<br> <b>Couleur :</b> Orange<br> <b>Adresse :</b> 7 r. des Marronniers</div>`)[0];
+                popup_ab7b2a749cb226e545971b3ccf890e93.setContent(html_c5b51c641feba0b55f39541dde64bf08);
+            
+        
+
+        marker_690460c991a31f1b049f37c49264fc33.bindPopup(popup_ab7b2a749cb226e545971b3ccf890e93)
+        ;
+
+        
+    
+    
+            marker_690460c991a31f1b049f37c49264fc33.bindTooltip(
+                `<div>
+                     Théâtre des Marronniers (Théâtre)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_690460c991a31f1b049f37c49264fc33.setIcon(icon_a6a5040612e96203355e4b77e2ee7620);
+            
+    
+            var marker_71835881d243fa00a761267ce7318b86 = L.marker(
+                [45.755979, 4.834248],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_ab0a9795c59b2ed871516f5b3cf347cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b246b0082e7d72f6cc7ccdee9a5314f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71ad8d45a9e9d59e6d61304b7fdc61b5 = $(`<div id="html_71ad8d45a9e9d59e6d61304b7fdc61b5" style="width: 100.0%; height: 100.0%;"><b>Poste Centrale Place Antonin Poncet</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 10 pl. Antonin-Poncet</div>`)[0];
+                popup_8b246b0082e7d72f6cc7ccdee9a5314f.setContent(html_71ad8d45a9e9d59e6d61304b7fdc61b5);
+            
+        
+
+        marker_71835881d243fa00a761267ce7318b86.bindPopup(popup_8b246b0082e7d72f6cc7ccdee9a5314f)
+        ;
+
+        
+    
+    
+            marker_71835881d243fa00a761267ce7318b86.bindTooltip(
+                `<div>
+                     Poste Centrale Place Antonin Poncet (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71835881d243fa00a761267ce7318b86.setIcon(icon_ab0a9795c59b2ed871516f5b3cf347cb);
+            
+    
+            var marker_ad2eea86a5fe0faecc37e3ba29755a3f = L.marker(
+                [45.760483, 4.833441],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_b465fcdd1d54bf0be74a26d1d12b5436 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a77b6400f882f030d384b19db932e41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01cdefb503ef5b66581b3fce171ad11f = $(`<div id="html_01cdefb503ef5b66581b3fce171ad11f" style="width: 100.0%; height: 100.0%;"><b>Fontaine des Jacobins</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> pl. des Jacobins</div>`)[0];
+                popup_1a77b6400f882f030d384b19db932e41.setContent(html_01cdefb503ef5b66581b3fce171ad11f);
+            
+        
+
+        marker_ad2eea86a5fe0faecc37e3ba29755a3f.bindPopup(popup_1a77b6400f882f030d384b19db932e41)
+        ;
+
+        
+    
+    
+            marker_ad2eea86a5fe0faecc37e3ba29755a3f.bindTooltip(
+                `<div>
+                     Fontaine des Jacobins (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad2eea86a5fe0faecc37e3ba29755a3f.setIcon(icon_b465fcdd1d54bf0be74a26d1d12b5436);
+            
+    
+            var marker_6b8fc3097e3e23f643a1f5149a79eecd = L.marker(
+                [45.7587313251007, 4.83498618517748],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_30974e857e83d0c3ba91270cee37c814 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce4eb980a506176f12c59c2b6d6b390a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_665641ed0e397f531a6812f1d958bdd2 = $(`<div id="html_665641ed0e397f531a6812f1d958bdd2" style="width: 100.0%; height: 100.0%;"><b>PATHE</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> 79 r. de la Republique</div>`)[0];
+                popup_ce4eb980a506176f12c59c2b6d6b390a.setContent(html_665641ed0e397f531a6812f1d958bdd2);
+            
+        
+
+        marker_6b8fc3097e3e23f643a1f5149a79eecd.bindPopup(popup_ce4eb980a506176f12c59c2b6d6b390a)
+        ;
+
+        
+    
+    
+            marker_6b8fc3097e3e23f643a1f5149a79eecd.bindTooltip(
+                `<div>
+                     PATHE (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b8fc3097e3e23f643a1f5149a79eecd.setIcon(icon_30974e857e83d0c3ba91270cee37c814);
+            
+    
+            var marker_d45c2d596996bfd2de92714a0c33f2e1 = L.marker(
+                [45.7574554841229, 4.83559508271896],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_a1a3fcdbb673cce934669e8182bb736c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bd94fa991af8fbc7a637bf79eccfbea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_488dcf238a7b0524fe89036f12d5200a = $(`<div id="html_488dcf238a7b0524fe89036f12d5200a" style="width: 100.0%; height: 100.0%;"><b>Lumière Bellecour</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> 12 r. de la Barre</div>`)[0];
+                popup_1bd94fa991af8fbc7a637bf79eccfbea.setContent(html_488dcf238a7b0524fe89036f12d5200a);
+            
+        
+
+        marker_d45c2d596996bfd2de92714a0c33f2e1.bindPopup(popup_1bd94fa991af8fbc7a637bf79eccfbea)
+        ;
+
+        
+    
+    
+            marker_d45c2d596996bfd2de92714a0c33f2e1.bindTooltip(
+                `<div>
+                     Lumière Bellecour (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d45c2d596996bfd2de92714a0c33f2e1.setIcon(icon_a1a3fcdbb673cce934669e8182bb736c);
+            
+    
+            var marker_02e370fa560af992df3b8b1cadba84ab = L.marker(
+                [45.754059, 4.831513],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_3183e6d58a3e1662580fd973472a5f18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8de7ab30f663ca524f5e0ea75590e25a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc7d5ca89f22fd2b9a73980c75bd3346 = $(`<div id="html_bc7d5ca89f22fd2b9a73980c75bd3346" style="width: 100.0%; height: 100.0%;"><b>Hôtel de Cuzieu (ancien)</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 30 r. Sainte-Hélène</div>`)[0];
+                popup_8de7ab30f663ca524f5e0ea75590e25a.setContent(html_bc7d5ca89f22fd2b9a73980c75bd3346);
+            
+        
+
+        marker_02e370fa560af992df3b8b1cadba84ab.bindPopup(popup_8de7ab30f663ca524f5e0ea75590e25a)
+        ;
+
+        
+    
+    
+            marker_02e370fa560af992df3b8b1cadba84ab.bindTooltip(
+                `<div>
+                     Hôtel de Cuzieu (ancien) (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02e370fa560af992df3b8b1cadba84ab.setIcon(icon_3183e6d58a3e1662580fd973472a5f18);
+            
+    
+            var marker_d5bf306e9bc4a11c47ab3567a58b7f8d = L.marker(
+                [45.759222, 4.835967],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_47b20a3705df6eedcf75f82866127133 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf43168ae0a1e3e361d36560b59cfcb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d897d890c0c218d67e3bb55c5c855175 = $(`<div id="html_d897d890c0c218d67e3bb55c5c855175" style="width: 100.0%; height: 100.0%;"><b>Hôtel-Dieu</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> r. de l'Hôpital</div>`)[0];
+                popup_cf43168ae0a1e3e361d36560b59cfcb1.setContent(html_d897d890c0c218d67e3bb55c5c855175);
+            
+        
+
+        marker_d5bf306e9bc4a11c47ab3567a58b7f8d.bindPopup(popup_cf43168ae0a1e3e361d36560b59cfcb1)
+        ;
+
+        
+    
+    
+            marker_d5bf306e9bc4a11c47ab3567a58b7f8d.bindTooltip(
+                `<div>
+                     Hôtel-Dieu (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5bf306e9bc4a11c47ab3567a58b7f8d.setIcon(icon_47b20a3705df6eedcf75f82866127133);
+            
+    
+            var marker_a09634dd2d464e3705335522475cfe11 = L.marker(
+                [45.75342, 4.83153],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_e918035b47eae5fdfd366a65775d809a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f95aeb7689242db37471dcc6af15b7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_824c39e046c987b0a01ef188b07c26cc = $(`<div id="html_824c39e046c987b0a01ef188b07c26cc" style="width: 100.0%; height: 100.0%;"><b>musée des arts décoratifs</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 34 r. de la Charité</div>`)[0];
+                popup_2f95aeb7689242db37471dcc6af15b7f.setContent(html_824c39e046c987b0a01ef188b07c26cc);
+            
+        
+
+        marker_a09634dd2d464e3705335522475cfe11.bindPopup(popup_2f95aeb7689242db37471dcc6af15b7f)
+        ;
+
+        
+    
+    
+            marker_a09634dd2d464e3705335522475cfe11.bindTooltip(
+                `<div>
+                     musée des arts décoratifs (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a09634dd2d464e3705335522475cfe11.setIcon(icon_e918035b47eae5fdfd366a65775d809a);
+            
+    
+            var marker_7cc714da4d04d67d56e180901593885e = L.marker(
+                [45.7588078865417, 4.83657191660753],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_62e786b61f35ac6153ab40e7e9551d3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_683998a7d9f95aeb8759ab9e8c3e01b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8929046190912358084841d848cf8989 = $(`<div id="html_8929046190912358084841d848cf8989" style="width: 100.0%; height: 100.0%;"><b>musée des hospices civils de Lyon</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 3 q. des Célestins</div>`)[0];
+                popup_683998a7d9f95aeb8759ab9e8c3e01b5.setContent(html_8929046190912358084841d848cf8989);
+            
+        
+
+        marker_7cc714da4d04d67d56e180901593885e.bindPopup(popup_683998a7d9f95aeb8759ab9e8c3e01b5)
+        ;
+
+        
+    
+    
+            marker_7cc714da4d04d67d56e180901593885e.bindTooltip(
+                `<div>
+                     musée des hospices civils de Lyon (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cc714da4d04d67d56e180901593885e.setIcon(icon_62e786b61f35ac6153ab40e7e9551d3e);
+            
+    
+            var marker_b602edd4f61c11249eafcdcf6f840e15 = L.marker(
+                [45.753117122729, 4.831633401235],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_844e937eeac43008c2fd4045d1a66bbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76bbc47e2c9815e9286870bdf91cff9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92b96fe0f58ef48f49a67c6879ca56c1 = $(`<div id="html_92b96fe0f58ef48f49a67c6879ca56c1" style="width: 100.0%; height: 100.0%;"><b>musée historique des tissus</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 34 r. de la Charité</div>`)[0];
+                popup_76bbc47e2c9815e9286870bdf91cff9a.setContent(html_92b96fe0f58ef48f49a67c6879ca56c1);
+            
+        
+
+        marker_b602edd4f61c11249eafcdcf6f840e15.bindPopup(popup_76bbc47e2c9815e9286870bdf91cff9a)
+        ;
+
+        
+    
+    
+            marker_b602edd4f61c11249eafcdcf6f840e15.bindTooltip(
+                `<div>
+                     musée historique des tissus (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b602edd4f61c11249eafcdcf6f840e15.setIcon(icon_844e937eeac43008c2fd4045d1a66bbc);
+            
+    
+            var marker_43ff6909641154278f547c0bb6bc9a1c = L.marker(
+                [45.7642192945722, 4.83475161234646],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_75889569c5570708cad4bcadbc483a79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c5e3e836f69601479a289551da10d8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a5a2501e926860e0e7815130d3c2b1a = $(`<div id="html_1a5a2501e926860e0e7815130d3c2b1a" style="width: 100.0%; height: 100.0%;"><b>musée de l'imprimerie et de la communication graphique</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 13 r. de la Poulaillerie</div>`)[0];
+                popup_9c5e3e836f69601479a289551da10d8e.setContent(html_1a5a2501e926860e0e7815130d3c2b1a);
+            
+        
+
+        marker_43ff6909641154278f547c0bb6bc9a1c.bindPopup(popup_9c5e3e836f69601479a289551da10d8e)
+        ;
+
+        
+    
+    
+            marker_43ff6909641154278f547c0bb6bc9a1c.bindTooltip(
+                `<div>
+                     musée de l'imprimerie et de la communication graphique (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43ff6909641154278f547c0bb6bc9a1c.setIcon(icon_75889569c5570708cad4bcadbc483a79);
+            
+    
+            var marker_efd87161fb5ecdee0fdf2257a328e36f = L.marker(
+                [45.7638587641848, 4.82779226441475],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_ab0c8a0c23e3b9c65f985af132434615 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af3cab6401c4a47a933ef49dedad5e65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fe022e7b01964afebaf2192e6b0fb4c = $(`<div id="html_2fe022e7b01964afebaf2192e6b0fb4c" style="width: 100.0%; height: 100.0%;"><b>musée Gadagne</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 1 pl. du Petit Collège</div>`)[0];
+                popup_af3cab6401c4a47a933ef49dedad5e65.setContent(html_2fe022e7b01964afebaf2192e6b0fb4c);
+            
+        
+
+        marker_efd87161fb5ecdee0fdf2257a328e36f.bindPopup(popup_af3cab6401c4a47a933ef49dedad5e65)
+        ;
+
+        
+    
+    
+            marker_efd87161fb5ecdee0fdf2257a328e36f.bindTooltip(
+                `<div>
+                     musée Gadagne (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efd87161fb5ecdee0fdf2257a328e36f.setIcon(icon_ab0c8a0c23e3b9c65f985af132434615);
+            
+    
+            var marker_496e7cff3f92adbc1e67c68944f968f1 = L.marker(
+                [45.765346937637, 4.83421213679707],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_243fe179c9fc265f9c1a2081cb713c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e20ab93f38f5cc2433b11aaa395322a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_858d5fc4f2b28005b00dac67c56ab228 = $(`<div id="html_858d5fc4f2b28005b00dac67c56ab228" style="width: 100.0%; height: 100.0%;"><b>Lumière Terreaux</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> 40 r. du President Edouard Herriot</div>`)[0];
+                popup_7e20ab93f38f5cc2433b11aaa395322a.setContent(html_858d5fc4f2b28005b00dac67c56ab228);
+            
+        
+
+        marker_496e7cff3f92adbc1e67c68944f968f1.bindPopup(popup_7e20ab93f38f5cc2433b11aaa395322a)
+        ;
+
+        
+    
+    
+            marker_496e7cff3f92adbc1e67c68944f968f1.bindTooltip(
+                `<div>
+                     Lumière Terreaux (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_496e7cff3f92adbc1e67c68944f968f1.setIcon(icon_243fe179c9fc265f9c1a2081cb713c95);
+            
+    
+            var marker_b11e6db0cd256637c0abd61207ca3a73 = L.marker(
+                [45.7650315086778, 4.82886172734963],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_a1bb653278baf6b37987ec332f2002e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_043c20930f0f7d15e1c098ac13be45d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69f0007547719bacfb2009805240f965 = $(`<div id="html_69f0007547719bacfb2009805240f965" style="width: 100.0%; height: 100.0%;"><b>Immeuble dit Maison Thomassin</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 2 pl. du Change 3 q. Romain-Rolland</div>`)[0];
+                popup_043c20930f0f7d15e1c098ac13be45d2.setContent(html_69f0007547719bacfb2009805240f965);
+            
+        
+
+        marker_b11e6db0cd256637c0abd61207ca3a73.bindPopup(popup_043c20930f0f7d15e1c098ac13be45d2)
+        ;
+
+        
+    
+    
+            marker_b11e6db0cd256637c0abd61207ca3a73.bindTooltip(
+                `<div>
+                     Immeuble dit Maison Thomassin (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b11e6db0cd256637c0abd61207ca3a73.setIcon(icon_a1bb653278baf6b37987ec332f2002e7);
+            
+    
+            var marker_5e12a3a680b653f205a2805401f035ec = L.marker(
+                [45.764784, 4.837981],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_3c4e340b2528b366ef086277b69de8e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b47307c2ad38fa7f12198a2e7c72311 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1989db8666631b5ca5b6cad9fceba973 = $(`<div id="html_1989db8666631b5ca5b6cad9fceba973" style="width: 100.0%; height: 100.0%;"><b>Immeuble Curtelin</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 9 q. Jean-Moulin</div>`)[0];
+                popup_0b47307c2ad38fa7f12198a2e7c72311.setContent(html_1989db8666631b5ca5b6cad9fceba973);
+            
+        
+
+        marker_5e12a3a680b653f205a2805401f035ec.bindPopup(popup_0b47307c2ad38fa7f12198a2e7c72311)
+        ;
+
+        
+    
+    
+            marker_5e12a3a680b653f205a2805401f035ec.bindTooltip(
+                `<div>
+                     Immeuble Curtelin (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e12a3a680b653f205a2805401f035ec.setIcon(icon_3c4e340b2528b366ef086277b69de8e7);
+            
+    
+            var marker_251b3dfe9eba4c6de09a9d3f9e781c10 = L.marker(
+                [45.7600406284424, 4.82176465033206],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_2a68f1a4af35b92541214580a1aa10db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08e50c9043fbf442bdba18cc0bc86f0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_898cf21781fdd2e58300924dbaf35abb = $(`<div id="html_898cf21781fdd2e58300924dbaf35abb" style="width: 100.0%; height: 100.0%;"><b>Parc Archéol. de Fourvière</b><br> <b>Type :</b> Lieu archéologique<br> <b>Prix :</b> 8€<br> <b>Couleur :</b> Beige<br> <b>Adresse :</b> 1 r. Clébert</div>`)[0];
+                popup_08e50c9043fbf442bdba18cc0bc86f0f.setContent(html_898cf21781fdd2e58300924dbaf35abb);
+            
+        
+
+        marker_251b3dfe9eba4c6de09a9d3f9e781c10.bindPopup(popup_08e50c9043fbf442bdba18cc0bc86f0f)
+        ;
+
+        
+    
+    
+            marker_251b3dfe9eba4c6de09a9d3f9e781c10.bindTooltip(
+                `<div>
+                     Parc Archéol. de Fourvière (Lieu archéologique)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_251b3dfe9eba4c6de09a9d3f9e781c10.setIcon(icon_2a68f1a4af35b92541214580a1aa10db);
+            
+    
+            var marker_fb8606323f39816def23a454d5cd9a24 = L.marker(
+                [45.762328, 4.821952],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_ad1e74ef86f2345e35b3c1f7aef07b21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c68fac563232deda2975eeb7f1a52499 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9d5a43c7882298b0f73efd1f2bdab53 = $(`<div id="html_d9d5a43c7882298b0f73efd1f2bdab53" style="width: 100.0%; height: 100.0%;"><b>Sanctuaire de Fourvière</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> pl. de Fourvière</div>`)[0];
+                popup_c68fac563232deda2975eeb7f1a52499.setContent(html_d9d5a43c7882298b0f73efd1f2bdab53);
+            
+        
+
+        marker_fb8606323f39816def23a454d5cd9a24.bindPopup(popup_c68fac563232deda2975eeb7f1a52499)
+        ;
+
+        
+    
+    
+            marker_fb8606323f39816def23a454d5cd9a24.bindTooltip(
+                `<div>
+                     Sanctuaire de Fourvière (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb8606323f39816def23a454d5cd9a24.setIcon(icon_ad1e74ef86f2345e35b3c1f7aef07b21);
+            
+    
+            var marker_ab7535929590fe868e0d241141c2252a = L.marker(
+                [45.760529, 4.82004],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_52d4cddad9c87883b356222a29c7ff61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19a7f4dfd0e3a668e5e6ec63f54680cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e2b9b18b0d977c678d0c4fbb0e0f2a2 = $(`<div id="html_7e2b9b18b0d977c678d0c4fbb0e0f2a2" style="width: 100.0%; height: 100.0%;"><b>Musée de La Civilisation Gallo-Romaine</b><br> <b>Type :</b> Lieu archéologique<br> <b>Prix :</b> 8€<br> <b>Couleur :</b> Beige<br> <b>Adresse :</b> 17 av. Clébert</div>`)[0];
+                popup_19a7f4dfd0e3a668e5e6ec63f54680cd.setContent(html_7e2b9b18b0d977c678d0c4fbb0e0f2a2);
+            
+        
+
+        marker_ab7535929590fe868e0d241141c2252a.bindPopup(popup_19a7f4dfd0e3a668e5e6ec63f54680cd)
+        ;
+
+        
+    
+    
+            marker_ab7535929590fe868e0d241141c2252a.bindTooltip(
+                `<div>
+                     Musée de La Civilisation Gallo-Romaine (Lieu archéologique)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab7535929590fe868e0d241141c2252a.setIcon(icon_52d4cddad9c87883b356222a29c7ff61);
+            
+    
+            var marker_81c51e84f4f13c1aa40e961fcf5e72b6 = L.marker(
+                [45.7594349936959, 4.81979411434383],
+                {
+}
+            ).addTo(map_3230ea3823879b72827aa8c88fbd4fc8);
+        
+    
+            var icon_dfbf5ed643ae3124a2c6a19b54077400 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f605aab6b7a41f04e59c7aff3c83e0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3299ec2babc823f959fc6681658dd307 = $(`<div id="html_3299ec2babc823f959fc6681658dd307" style="width: 100.0%; height: 100.0%;"><b>Lugdunum, musée et théâtres romains</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 17 r. Cléberg</div>`)[0];
+                popup_1f605aab6b7a41f04e59c7aff3c83e0f.setContent(html_3299ec2babc823f959fc6681658dd307);
+            
+        
+
+        marker_81c51e84f4f13c1aa40e961fcf5e72b6.bindPopup(popup_1f605aab6b7a41f04e59c7aff3c83e0f)
+        ;
+
+        
+    
+    
+            marker_81c51e84f4f13c1aa40e961fcf5e72b6.bindTooltip(
+                `<div>
+                     Lugdunum, musée et théâtres romains (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81c51e84f4f13c1aa40e961fcf5e72b6.setIcon(icon_dfbf5ed643ae3124a2c6a19b54077400);
+            
+</script>
+</html>

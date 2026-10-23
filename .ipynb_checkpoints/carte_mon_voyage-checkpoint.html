@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_820df4fda3f9b51bf69326ac9d685858 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_820df4fda3f9b51bf69326ac9d685858" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_820df4fda3f9b51bf69326ac9d685858 = L.map(
+                "map_820df4fda3f9b51bf69326ac9d685858",
+                {
+                    center: [47.9027336, 1.9086066],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6df865582b07aa6660287a415d9202d5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6df865582b07aa6660287a415d9202d5.addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var marker_08d8f07e231e71a65b947238604beb87 = L.marker(
+                [47.9035219611564, 1.9084640504673],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_51550491071a5fdaf15c89f8a0ca6f49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_608fe2e34b05bfbe929168574061ab63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_607d68944b61c02a9b3f33741925a91a = $(`<div id="html_607d68944b61c02a9b3f33741925a91a" style="width: 100.0%; height: 100.0%;"><b>Dirrecte</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 12 pl. de l'Etape</div>`)[0];
+                popup_608fe2e34b05bfbe929168574061ab63.setContent(html_607d68944b61c02a9b3f33741925a91a);
+            
+        
+
+        marker_08d8f07e231e71a65b947238604beb87.bindPopup(popup_608fe2e34b05bfbe929168574061ab63)
+        ;
+
+        
+    
+    
+            marker_08d8f07e231e71a65b947238604beb87.bindTooltip(
+                `<div>
+                     Dirrecte (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_08d8f07e231e71a65b947238604beb87.setIcon(icon_51550491071a5fdaf15c89f8a0ca6f49);
+            
+    
+            var marker_383ae43449fc1a7b388ab9091960df68 = L.marker(
+                [47.90362, 1.907726],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_f3f2ee69398deed920262f4a51a88e09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dd8103da01291d5035ea3b6ba84478b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_581d19f9edd686332e3ed423a487c96b = $(`<div id="html_581d19f9edd686332e3ed423a487c96b" style="width: 100.0%; height: 100.0%;"><b>Hôtel Tassin de Villiers</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 1 B r. Bretonnerie</div>`)[0];
+                popup_4dd8103da01291d5035ea3b6ba84478b.setContent(html_581d19f9edd686332e3ed423a487c96b);
+            
+        
+
+        marker_383ae43449fc1a7b388ab9091960df68.bindPopup(popup_4dd8103da01291d5035ea3b6ba84478b)
+        ;
+
+        
+    
+    
+            marker_383ae43449fc1a7b388ab9091960df68.bindTooltip(
+                `<div>
+                     Hôtel Tassin de Villiers (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_383ae43449fc1a7b388ab9091960df68.setIcon(icon_f3f2ee69398deed920262f4a51a88e09);
+            
+    
+            var marker_e41649287187a32183c6ecef35542f25 = L.marker(
+                [47.9039199502301, 1.90816822169039],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_b5688c4707a7662070d0364ce8e6ce4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7d51d6ecb1db86aca71d73b850c60f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26d01536d13a1cda52eed3cc47f01156 = $(`<div id="html_26d01536d13a1cda52eed3cc47f01156" style="width: 100.0%; height: 100.0%;"><b>Direction régionale de l'économie, de l'emploi, du travail et des solidarités (ex-DIRRECTE)</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> None</div>`)[0];
+                popup_a7d51d6ecb1db86aca71d73b850c60f2.setContent(html_26d01536d13a1cda52eed3cc47f01156);
+            
+        
+
+        marker_e41649287187a32183c6ecef35542f25.bindPopup(popup_a7d51d6ecb1db86aca71d73b850c60f2)
+        ;
+
+        
+    
+    
+            marker_e41649287187a32183c6ecef35542f25.bindTooltip(
+                `<div>
+                     Direction régionale de l'économie, de l'emploi, du travail et des solidarités (ex-DIRRECTE) (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e41649287187a32183c6ecef35542f25.setIcon(icon_b5688c4707a7662070d0364ce8e6ce4e);
+            
+    
+            var marker_251d667ab2b087c8f091ff13c6eb2467 = L.marker(
+                [47.9025072466655, 1.90987884156574],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_6185452e29894ca077303e610c7ec0e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84d3237965fa72d887a8af9fc5293d05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66c2615eb650f7e459a80a36a5e47aa8 = $(`<div id="html_66c2615eb650f7e459a80a36a5e47aa8" style="width: 100.0%; height: 100.0%;"><b>musée des beaux-arts</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> pl. Sainte-Croix</div>`)[0];
+                popup_84d3237965fa72d887a8af9fc5293d05.setContent(html_66c2615eb650f7e459a80a36a5e47aa8);
+            
+        
+
+        marker_251d667ab2b087c8f091ff13c6eb2467.bindPopup(popup_84d3237965fa72d887a8af9fc5293d05)
+        ;
+
+        
+    
+    
+            marker_251d667ab2b087c8f091ff13c6eb2467.bindTooltip(
+                `<div>
+                     musée des beaux-arts (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_251d667ab2b087c8f091ff13c6eb2467.setIcon(icon_6185452e29894ca077303e610c7ec0e7);
+            
+    
+            var marker_1d1c3b834a9eb6aac842c70f9e88d982 = L.marker(
+                [47.90069, 1.910567],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_a1661bf80cd7e64c585746f538a9a01f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_868faf199dcdba1ec99ea6aa6aed531b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b06b0ac9dede7f1c924cdb35423b879 = $(`<div id="html_9b06b0ac9dede7f1c924cdb35423b879" style="width: 100.0%; height: 100.0%;"><b>Ancienne université</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> r. Pothier</div>`)[0];
+                popup_868faf199dcdba1ec99ea6aa6aed531b.setContent(html_9b06b0ac9dede7f1c924cdb35423b879);
+            
+        
+
+        marker_1d1c3b834a9eb6aac842c70f9e88d982.bindPopup(popup_868faf199dcdba1ec99ea6aa6aed531b)
+        ;
+
+        
+    
+    
+            marker_1d1c3b834a9eb6aac842c70f9e88d982.bindTooltip(
+                `<div>
+                     Ancienne université (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d1c3b834a9eb6aac842c70f9e88d982.setIcon(icon_a1661bf80cd7e64c585746f538a9a01f);
+            
+    
+            var marker_d0848557cfb4f924cb84bb78b5ca8d71 = L.marker(
+                [47.899085, 1.909296],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_23264355929ac4bdbd32476cac108ab3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54dfbda8b437cdbb9a780f59e97f3fbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_100a27fa3c11ca763fdae7f42a7db34c = $(`<div id="html_100a27fa3c11ca763fdae7f42a7db34c" style="width: 100.0%; height: 100.0%;"><b>Maison dite des Chanoines ou hôtel d'Hector de Sanxerre</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 211 r. de Bourgogne 39 Bis, 41 r. de la Poterne</div>`)[0];
+                popup_54dfbda8b437cdbb9a780f59e97f3fbb.setContent(html_100a27fa3c11ca763fdae7f42a7db34c);
+            
+        
+
+        marker_d0848557cfb4f924cb84bb78b5ca8d71.bindPopup(popup_54dfbda8b437cdbb9a780f59e97f3fbb)
+        ;
+
+        
+    
+    
+            marker_d0848557cfb4f924cb84bb78b5ca8d71.bindTooltip(
+                `<div>
+                     Maison dite des Chanoines ou hôtel d'Hector de Sanxerre (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0848557cfb4f924cb84bb78b5ca8d71.setIcon(icon_23264355929ac4bdbd32476cac108ab3);
+            
+    
+            var marker_cf4ac2dc2181a66e69d435ce9664c845 = L.marker(
+                [47.899242, 1.906725],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_110100f607c3245e79a83355ae40c50a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfa3565a4adb4e5ff5b4899030d68f4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba84dcfbaed3436cc5b5d3e40de3a821 = $(`<div id="html_ba84dcfbaed3436cc5b5d3e40de3a821" style="width: 100.0%; height: 100.0%;"><b>Maison Renaissance</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 20 pl. du Châtelet</div>`)[0];
+                popup_dfa3565a4adb4e5ff5b4899030d68f4f.setContent(html_ba84dcfbaed3436cc5b5d3e40de3a821);
+            
+        
+
+        marker_cf4ac2dc2181a66e69d435ce9664c845.bindPopup(popup_dfa3565a4adb4e5ff5b4899030d68f4f)
+        ;
+
+        
+    
+    
+            marker_cf4ac2dc2181a66e69d435ce9664c845.bindTooltip(
+                `<div>
+                     Maison Renaissance (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf4ac2dc2181a66e69d435ce9664c845.setIcon(icon_110100f607c3245e79a83355ae40c50a);
+            
+    
+            var marker_eaff418d3d80d36d96914e94b1adfaf1 = L.marker(
+                [47.8987212818852, 1.90810754377204],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_0d489396b0b7467e55c32ab88a075cc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_136ec767547aa94d745e29aad232e658 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b4b6a024075f294804c75709d1c106f = $(`<div id="html_5b4b6a024075f294804c75709d1c106f" style="width: 100.0%; height: 100.0%;"><b>PATHE ORLEANS</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> 2 r. des Halles</div>`)[0];
+                popup_136ec767547aa94d745e29aad232e658.setContent(html_5b4b6a024075f294804c75709d1c106f);
+            
+        
+
+        marker_eaff418d3d80d36d96914e94b1adfaf1.bindPopup(popup_136ec767547aa94d745e29aad232e658)
+        ;
+
+        
+    
+    
+            marker_eaff418d3d80d36d96914e94b1adfaf1.bindTooltip(
+                `<div>
+                     PATHE ORLEANS (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eaff418d3d80d36d96914e94b1adfaf1.setIcon(icon_0d489396b0b7467e55c32ab88a075cc2);
+            
+    
+            var marker_91caf6a77e71ab4cc62fa78b730a080f = L.marker(
+                [47.899747, 1.905617],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_f38e2e8d131e7ba5e8f3bc9b86b99b8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96e7dffc17272f02130b79658eaee96a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31bc3397f7311c987e9d2f618662a69c = $(`<div id="html_31bc3397f7311c987e9d2f618662a69c" style="width: 100.0%; height: 100.0%;"><b>Maison de Du Cerceau</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 6 r. Ducerceau</div>`)[0];
+                popup_96e7dffc17272f02130b79658eaee96a.setContent(html_31bc3397f7311c987e9d2f618662a69c);
+            
+        
+
+        marker_91caf6a77e71ab4cc62fa78b730a080f.bindPopup(popup_96e7dffc17272f02130b79658eaee96a)
+        ;
+
+        
+    
+    
+            marker_91caf6a77e71ab4cc62fa78b730a080f.bindTooltip(
+                `<div>
+                     Maison de Du Cerceau (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91caf6a77e71ab4cc62fa78b730a080f.setIcon(icon_f38e2e8d131e7ba5e8f3bc9b86b99b8c);
+            
+    
+            var marker_321fff0531d76f3d72f2674bbed2dd5c = L.marker(
+                [47.902472, 1.904354],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_27903855861954a17f5ba70f71f1abfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_506fb81702cb0a5d2ddcaaffd32626d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c74cbab070f38d13a5e0972afdff0e5 = $(`<div id="html_7c74cbab070f38d13a5e0972afdff0e5" style="width: 100.0%; height: 100.0%;"><b>Chambre de Commerce</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 31 pl. du Martroi</div>`)[0];
+                popup_506fb81702cb0a5d2ddcaaffd32626d1.setContent(html_7c74cbab070f38d13a5e0972afdff0e5);
+            
+        
+
+        marker_321fff0531d76f3d72f2674bbed2dd5c.bindPopup(popup_506fb81702cb0a5d2ddcaaffd32626d1)
+        ;
+
+        
+    
+    
+            marker_321fff0531d76f3d72f2674bbed2dd5c.bindTooltip(
+                `<div>
+                     Chambre de Commerce (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_321fff0531d76f3d72f2674bbed2dd5c.setIcon(icon_27903855861954a17f5ba70f71f1abfe);
+            
+    
+            var marker_556fb6176bcb5ab41a21a2e39a0de465 = L.marker(
+                [47.902472, 1.904354],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_9095f5e90bfff9f57ab398712d75be7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dafa21c64382b5811b2a3f9ad23d5999 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6dde2abbb519552339a7d10e7240df7 = $(`<div id="html_e6dde2abbb519552339a7d10e7240df7" style="width: 100.0%; height: 100.0%;"><b>Monument équestre à Jeanne d'Arc</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> pl. du Martroi</div>`)[0];
+                popup_dafa21c64382b5811b2a3f9ad23d5999.setContent(html_e6dde2abbb519552339a7d10e7240df7);
+            
+        
+
+        marker_556fb6176bcb5ab41a21a2e39a0de465.bindPopup(popup_dafa21c64382b5811b2a3f9ad23d5999)
+        ;
+
+        
+    
+    
+            marker_556fb6176bcb5ab41a21a2e39a0de465.bindTooltip(
+                `<div>
+                     Monument équestre à Jeanne d'Arc (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_556fb6176bcb5ab41a21a2e39a0de465.setIcon(icon_9095f5e90bfff9f57ab398712d75be7f);
+            
+    
+            var marker_778d0ec64966eff1d0a26876d8fbd7dd = L.marker(
+                [47.902099, 1.90339],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_d5510a69c30d07f8b6259567209da3f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0df8e8e7d1962ef3d384f0e81cbe5e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1638e7087ce0e04da5cc213d19d7dc2 = $(`<div id="html_c1638e7087ce0e04da5cc213d19d7dc2" style="width: 100.0%; height: 100.0%;"><b>Maison dite de la Chancellerie</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 27 29 pl. du Martroi Anciennement 37 39</div>`)[0];
+                popup_f0df8e8e7d1962ef3d384f0e81cbe5e1.setContent(html_c1638e7087ce0e04da5cc213d19d7dc2);
+            
+        
+
+        marker_778d0ec64966eff1d0a26876d8fbd7dd.bindPopup(popup_f0df8e8e7d1962ef3d384f0e81cbe5e1)
+        ;
+
+        
+    
+    
+            marker_778d0ec64966eff1d0a26876d8fbd7dd.bindTooltip(
+                `<div>
+                     Maison dite de la Chancellerie (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_778d0ec64966eff1d0a26876d8fbd7dd.setIcon(icon_d5510a69c30d07f8b6259567209da3f8);
+            
+    
+            var marker_43a4278e968a4357ef4a0e89c7048b15 = L.marker(
+                [47.9080697732446, 1.90790736733163],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_561cef116e9b64d74af2dbf7e0fe56ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_562cf05cfb5bbaf07b04e3436026b5a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eeb65e2c37d0b4f7522daf93e5b2dd0d = $(`<div id="html_eeb65e2c37d0b4f7522daf93e5b2dd0d" style="width: 100.0%; height: 100.0%;"><b>muséum d'Orléans pour la biodiversité et l'environnement</b><br> <b>Type :</b> Musée<br> <b>Prix :</b> 15€<br> <b>Couleur :</b> Violet<br> <b>Adresse :</b> 2 r. Marcel Proust</div>`)[0];
+                popup_562cf05cfb5bbaf07b04e3436026b5a5.setContent(html_eeb65e2c37d0b4f7522daf93e5b2dd0d);
+            
+        
+
+        marker_43a4278e968a4357ef4a0e89c7048b15.bindPopup(popup_562cf05cfb5bbaf07b04e3436026b5a5)
+        ;
+
+        
+    
+    
+            marker_43a4278e968a4357ef4a0e89c7048b15.bindTooltip(
+                `<div>
+                     muséum d'Orléans pour la biodiversité et l'environnement (Musée)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43a4278e968a4357ef4a0e89c7048b15.setIcon(icon_561cef116e9b64d74af2dbf7e0fe56ed);
+            
+    
+            var marker_970a464ca6f768fc9e3f934841f9d0bc = L.marker(
+                [47.9066927813001, 1.91272706727447],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_0af6ab2000435305b4b07cb8b58f2cad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73756706908d1b82fdbea6f91fca41da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_732e2ce5170e9d46d5c2dccec4539fd4 = $(`<div id="html_732e2ce5170e9d46d5c2dccec4539fd4" style="width: 100.0%; height: 100.0%;"><b>Lycée Jean-Zay</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 2 r. Ferdinand-Buisson</div>`)[0];
+                popup_73756706908d1b82fdbea6f91fca41da.setContent(html_732e2ce5170e9d46d5c2dccec4539fd4);
+            
+        
+
+        marker_970a464ca6f768fc9e3f934841f9d0bc.bindPopup(popup_73756706908d1b82fdbea6f91fca41da)
+        ;
+
+        
+    
+    
+            marker_970a464ca6f768fc9e3f934841f9d0bc.bindTooltip(
+                `<div>
+                     Lycée Jean-Zay (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_970a464ca6f768fc9e3f934841f9d0bc.setIcon(icon_0af6ab2000435305b4b07cb8b58f2cad);
+            
+    
+            var marker_94305699ecab57544135f2eb742f8176 = L.marker(
+                [47.904567, 1.914337],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_b8a320a057a269cce690268f17aeb09e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa7111640b4f025a9ff4d932d6da4862 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d063a9171afb302f83333fa9e571f86c = $(`<div id="html_d063a9171afb302f83333fa9e571f86c" style="width: 100.0%; height: 100.0%;"><b>THEATRE D'ORLEANS</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> bd Pierre Segelle</div>`)[0];
+                popup_fa7111640b4f025a9ff4d932d6da4862.setContent(html_d063a9171afb302f83333fa9e571f86c);
+            
+        
+
+        marker_94305699ecab57544135f2eb742f8176.bindPopup(popup_fa7111640b4f025a9ff4d932d6da4862)
+        ;
+
+        
+    
+    
+            marker_94305699ecab57544135f2eb742f8176.bindTooltip(
+                `<div>
+                     THEATRE D'ORLEANS (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94305699ecab57544135f2eb742f8176.setIcon(icon_b8a320a057a269cce690268f17aeb09e);
+            
+    
+            var marker_84d06a2b1e81c11c746e9d530b277f6b = L.marker(
+                [47.9039030841893, 1.91486813549929],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_f4ac242ab1faea631f9977abdc526970 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae07d8dacb2f095455aefb7299c3554c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46ffd77aa48758d5b6ea83dd97f7a9eb = $(`<div id="html_46ffd77aa48758d5b6ea83dd97f7a9eb" style="width: 100.0%; height: 100.0%;"><b>CADO-Centre national de création Orléans Loiret</b><br> <b>Type :</b> Théâtre<br> <b>Prix :</b> 25€<br> <b>Couleur :</b> Orange<br> <b>Adresse :</b> Théâtre d'Orléans</div>`)[0];
+                popup_ae07d8dacb2f095455aefb7299c3554c.setContent(html_46ffd77aa48758d5b6ea83dd97f7a9eb);
+            
+        
+
+        marker_84d06a2b1e81c11c746e9d530b277f6b.bindPopup(popup_ae07d8dacb2f095455aefb7299c3554c)
+        ;
+
+        
+    
+    
+            marker_84d06a2b1e81c11c746e9d530b277f6b.bindTooltip(
+                `<div>
+                     CADO-Centre national de création Orléans Loiret (Théâtre)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84d06a2b1e81c11c746e9d530b277f6b.setIcon(icon_f4ac242ab1faea631f9977abdc526970);
+            
+    
+            var marker_54e2927f18b89e844f0932024fe20ce4 = L.marker(
+                [47.898614, 1.903672],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_f97e49bf9d2403da014122d34fd0c1e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24e1a5a174fc5196c2255bcd6286f45d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f18f6bfe46fb85ba7d3bc39bb3d8416 = $(`<div id="html_9f18f6bfe46fb85ba7d3bc39bb3d8416" style="width: 100.0%; height: 100.0%;"><b>Maison du 16e siècle</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 4 r. des Trois-Maillets</div>`)[0];
+                popup_24e1a5a174fc5196c2255bcd6286f45d.setContent(html_9f18f6bfe46fb85ba7d3bc39bb3d8416);
+            
+        
+
+        marker_54e2927f18b89e844f0932024fe20ce4.bindPopup(popup_24e1a5a174fc5196c2255bcd6286f45d)
+        ;
+
+        
+    
+    
+            marker_54e2927f18b89e844f0932024fe20ce4.bindTooltip(
+                `<div>
+                     Maison du 16e siècle (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54e2927f18b89e844f0932024fe20ce4.setIcon(icon_f97e49bf9d2403da014122d34fd0c1e4);
+            
+    
+            var marker_0bf8dc8b50f366ec49ce7045d474078c = L.marker(
+                [47.9043325460267, 1.91516562017301],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_adfca4e0584cc76156988e4b0123d816 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_893ee3b9f07f6ddfec57c5908980bb33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e79e1c2f61d45f51d4642fccde02085b = $(`<div id="html_e79e1c2f61d45f51d4642fccde02085b" style="width: 100.0%; height: 100.0%;"><b>Scène nationale d'Orléans</b><br> <b>Type :</b> Scène<br> <b>Prix :</b> 20€<br> <b>Couleur :</b> Bleu gris<br> <b>Adresse :</b> Théâtre d'Orléans bd Pierre Segelle</div>`)[0];
+                popup_893ee3b9f07f6ddfec57c5908980bb33.setContent(html_e79e1c2f61d45f51d4642fccde02085b);
+            
+        
+
+        marker_0bf8dc8b50f366ec49ce7045d474078c.bindPopup(popup_893ee3b9f07f6ddfec57c5908980bb33)
+        ;
+
+        
+    
+    
+            marker_0bf8dc8b50f366ec49ce7045d474078c.bindTooltip(
+                `<div>
+                     Scène nationale d'Orléans (Scène)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bf8dc8b50f366ec49ce7045d474078c.setIcon(icon_adfca4e0584cc76156988e4b0123d816);
+            
+    
+            var marker_83f66c6755face3ad00164fbc28fc8dd = L.marker(
+                [47.9013389007749, 1.90097780182896],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_4365cee362b94979e9b8286a54a1d616 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b0e260cc7d1592e7503139585056e4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_363df836692f02f4545407810b5a85c4 = $(`<div id="html_363df836692f02f4545407810b5a85c4" style="width: 100.0%; height: 100.0%;"><b>LES CARMES</b><br> <b>Type :</b> Cinéma<br> <b>Prix :</b> 12€<br> <b>Couleur :</b> Rouge<br> <b>Adresse :</b> 7 r. des Carmes</div>`)[0];
+                popup_8b0e260cc7d1592e7503139585056e4d.setContent(html_363df836692f02f4545407810b5a85c4);
+            
+        
+
+        marker_83f66c6755face3ad00164fbc28fc8dd.bindPopup(popup_8b0e260cc7d1592e7503139585056e4d)
+        ;
+
+        
+    
+    
+            marker_83f66c6755face3ad00164fbc28fc8dd.bindTooltip(
+                `<div>
+                     LES CARMES (Cinéma)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83f66c6755face3ad00164fbc28fc8dd.setIcon(icon_4365cee362b94979e9b8286a54a1d616);
+            
+    
+            var marker_75dd0c9ae54d4caa037aa9b92874a50d = L.marker(
+                [47.899441, 1.916267],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_4cc4952557f3d19c8fbbf823a25faddb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62d9882bb6bb44f84c572833cb79106a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d4c394c55b845d259307f99b139af7f = $(`<div id="html_3d4c394c55b845d259307f99b139af7f" style="width: 100.0%; height: 100.0%;"><b>"Hôtel dit " du Roi ""</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 10 r. du Cloître-Saint-Aignan r. des Quatre-Fils-Aymon</div>`)[0];
+                popup_62d9882bb6bb44f84c572833cb79106a.setContent(html_3d4c394c55b845d259307f99b139af7f);
+            
+        
+
+        marker_75dd0c9ae54d4caa037aa9b92874a50d.bindPopup(popup_62d9882bb6bb44f84c572833cb79106a)
+        ;
+
+        
+    
+    
+            marker_75dd0c9ae54d4caa037aa9b92874a50d.bindTooltip(
+                `<div>
+                     "Hôtel dit " du Roi "" (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75dd0c9ae54d4caa037aa9b92874a50d.setIcon(icon_4cc4952557f3d19c8fbbf823a25faddb);
+            
+    
+            var marker_d5d8d96792b67bf5374a5c969741a154 = L.marker(
+                [47.9040409666397, 1.89674717844474],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_3e4f5893dbf342e9e04f7f939f9ef9c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12844b145398497922a44a47823b169f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c4165acafeec6973c023447be992419 = $(`<div id="html_8c4165acafeec6973c023447be992419" style="width: 100.0%; height: 100.0%;"><b>Frac -Orleans</b><br> <b>Type :</b> Centre d'art<br> <b>Prix :</b> 8€<br> <b>Couleur :</b> Rouge clair<br> <b>Adresse :</b> 88 r. du Colombier</div>`)[0];
+                popup_12844b145398497922a44a47823b169f.setContent(html_8c4165acafeec6973c023447be992419);
+            
+        
+
+        marker_d5d8d96792b67bf5374a5c969741a154.bindPopup(popup_12844b145398497922a44a47823b169f)
+        ;
+
+        
+    
+    
+            marker_d5d8d96792b67bf5374a5c969741a154.bindTooltip(
+                `<div>
+                     Frac -Orleans (Centre d'art)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5d8d96792b67bf5374a5c969741a154.setIcon(icon_3e4f5893dbf342e9e04f7f939f9ef9c1);
+            
+    
+            var marker_d753a2738d25f2f7fe3154de9a0d98fa = L.marker(
+                [47.9040409666397, 1.89674717844474],
+                {
+}
+            ).addTo(map_820df4fda3f9b51bf69326ac9d685858);
+        
+    
+            var icon_95867fb24462e118dcab003928d13f2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ba156660bbec7e4cca0816956316f8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_181afee424a8b25e3e205337cbfd1edc = $(`<div id="html_181afee424a8b25e3e205337cbfd1edc" style="width: 100.0%; height: 100.0%;"><b>FRAC - Centre-Val de Loire</b><br> <b>Type :</b> Monument<br> <b>Prix :</b> 10€<br> <b>Couleur :</b> Rouge foncé<br> <b>Adresse :</b> 88 r. du Colombier</div>`)[0];
+                popup_7ba156660bbec7e4cca0816956316f8b.setContent(html_181afee424a8b25e3e205337cbfd1edc);
+            
+        
+
+        marker_d753a2738d25f2f7fe3154de9a0d98fa.bindPopup(popup_7ba156660bbec7e4cca0816956316f8b)
+        ;
+
+        
+    
+    
+            marker_d753a2738d25f2f7fe3154de9a0d98fa.bindTooltip(
+                `<div>
+                     FRAC - Centre-Val de Loire (Monument)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d753a2738d25f2f7fe3154de9a0d98fa.setIcon(icon_95867fb24462e118dcab003928d13f2c);
+            
+</script>
+</html>
